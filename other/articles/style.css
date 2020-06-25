@@ -1,35 +1,136 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #d3d1e0;
+    background-color: #d0d5e4;
     font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .body-container {
     background-color: white;
-    display: flex;
     flex-direction: column;
     width: 940px;
+    padding-bottom: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.body-header {
+    margin: 30px 30px;
+    display: inline-flex;
+    width: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.body-header button {
+    background-color: white;
+    color: #0e1731;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 0;
+    outline: none;
+}
+
+.body-header :first-child {
+    margin-left: 0;
+    padding: 0;
+}
+
+.body-header button:last-of-type {
+    margin-right: auto;
+}
+
+.body-header .fa {
+    margin-left: 2px;
+    margin-right: 3px;
+    width: 3px;
+}
+
+.login {
+    justify-self: flex-end;
+    align-self: center;
+    margin-right: 60px;
+}
+
+.login .btn-login {
+    border-width: 1px;
+    border-color: #f5f6f9;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #0e1731;
+}
+
+.login .btn-get-started {
+    background-color: #0e1731;
+    font-weight: 400;
+    color: white;
+}
+
+.body-container hr {
+    background-color: #f5f6f9;
+    width: 100%;
+    height: 2px;
+    opacity: 0.3;
+    margin: 0 0;
+}
+
+.main-content {
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 100px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    width: 100%;
+}
+
+.content-navigator {
+    margin: 20px 0;
+    display: inline-flex;
+    width: 100%;
+}
+
+.content-navigator button {
+    background-color: white;
+    color: #0e1731;
+    border-width: 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 8px;
+    padding: 0;
+    outline: none;
+}
+
+.content-navigator :first-child {
+    margin-left: 0;
+    padding: 0;
+}
+
+.content-navigator button:last-of-type {
+    margin-right: auto;
+}
+
+.content-navigator .content-nav-right {
+    justify-items: flex-end;
+    align-self: flex-end;
+}
+
+.fa-search {
+    font-size: 16px;
 }
 
 .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
     gap: 50px;
     margin: auto;
 }
@@ -50,6 +151,7 @@ body {
     width: 100%;
     height: 250px;
     object-fit: cover;
+    border-radius: 3px;
 }
 
 .card-main-body {
@@ -68,6 +170,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     margin: 0 0 20px;
+    line-height: 1.5;
 }
 
 .user-main {
@@ -113,14 +216,14 @@ body {
 }
 
 .card-related-body h4 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .user-related {
     display: flex;
-    margin-top: auto;
+    margin-top: 10px;
 }
 
 .user-related img {
@@ -138,6 +241,16 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .body-container {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 200px;
+    }
     .card-container {
         grid-template-columns: 1fr;
     }
