@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191b1d;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    color: #eaeaea;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto auto auto;
+    justify-self: center;
+}
+
+.page-header {
+    align-self: start;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto auto auto;
+    background-color: #bb1e4e;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-bottom: 14px;
+    padding-top: 10px;
+}
+
+.page-body {
+    width: 940px;
+    align-self: center;
+    margin: 100px auto auto auto;
+}
+
+.page-header h4 {
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.page-header h3 {
+    font-size: 15px;
+    margin: 6px 0 0 0;
+}
+
+.content-header {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.content-header h1 {
+    font-size: 30px;
+    margin: 0 0 0 0;
+}
+
+.content-header h4 {
+    font-weight: lighter;
+}
+
+.content-header .selector {
+    margin: 0 0 0 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.content-header .switch {
+    margin: 0 10px;
+}
+
+.cards {
+    width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    gap: 10px;
+    margin: auto;
+}
+
+.card {
+    background-color: #22262c;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.card h1 {
+    font-size: 40px;
+    margin: 10px 0 0 0;
+}
+
+.cards :last-child h1 {
+    font-size: 30px;
+    margin-top: 19px;
+}
+
+.card ul {
+    text-align: start;
+    margin: 30px 0 auto 20px;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 2.2;
+    list-style: none;
+}
+
+.card ul li::before {
+    content: "\25CF";
+    color: #bb1e4e;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.card .choose {
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 45px;
+    background-color: inherit;
+    color: #fafafa;
+    border-radius: 5px;
+    border-color: #bb1e4e;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 16px;
+}
+
+.card .choose:hover {
+    background-color: #bb1e4e;
+}
+
+.monthly {
+    align-self: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.monthly h1 {
+    margin-right: 5px;
+}
+
+.monthly h2 {
+    align-self: end;
+    text-align: end;
+    margin-top: auto;
+    margin-bottom: 9px;
+    font-size: 18px;
+}
+
+.card small {
+    color: #bb1e4e;
+    justify-self: start;
+    margin: 5px auto 0 40px;
+    font-size: 12px;
+}
+
+.card select {
+    background-color: inherit;
+    color: #fafafa;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    border-color: #87898c;
+    border-width: 1px;
+    border-style: solid;
+    opacity: 0.7;
+    align-self: center;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align-last: center;
+    margin-top: 20px;
+}
