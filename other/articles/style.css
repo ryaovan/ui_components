@@ -9,18 +9,19 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .body-container {
     background-color: white;
+    display: flex;
     flex-direction: column;
     width: 940px;
-    padding-bottom: 200px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    margin: 0 auto auto auto;
+    margin: 0 auto 0 auto;
+    height: 100%;
 }
 
 .body-header {
@@ -89,9 +90,11 @@ button:hover {
 }
 
 .main-content {
+    background-color: white;
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
+    margin-bottom: auto;
 }
 
 .content-navigator {
@@ -243,15 +246,14 @@ button:hover {
 
 @media (max-width: 768px) {
     body {
-        align-items: flex-start;
-        justify-content: flex-start;
+        background-color: white;
     }
 
     .body-container {
         width: 100%;
         margin: 0;
-        padding: 0 0 200px;
     }
+
     .card-container {
         grid-template-columns: 1fr;
     }
