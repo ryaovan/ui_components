@@ -18,8 +18,9 @@ body {
     flex-direction: column;
     width: 940px;
     padding-bottom: 200px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin: 0 auto auto auto;
 }
 
 .body-header {
