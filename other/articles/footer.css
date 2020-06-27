@@ -36,13 +36,10 @@ footer hr {
 }
 
 .footer-source {
-    align-items: center;
+    font-style: italic;
 }
 
-.footer-body small {
-    font-size: 12px;
-}
-
-.footer-body a {
+.footer-body small,
+a {
     font-size: 12px;
 }
