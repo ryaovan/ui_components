@@ -7,15 +7,19 @@
 body {
     background-color: #191b1d;
     font-family: "Open Sans", sans-serif;
-    display: flex;
     color: #eaeaea;
-    margin: 0;
     height: 100vh;
+    margin: 0;
 }
 
 .container {
-    margin: 0 auto auto auto;
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: start;
+    width: 100vw;
 }
 
 .page-header {
@@ -31,7 +35,7 @@ body {
 }
 
 .page-body {
-    width: 940px;
+    width: 100%;
     align-self: center;
     margin: 100px auto auto auto;
 }
@@ -49,7 +53,7 @@ body {
 }
 
 .content-header {
-    width: 500px;
+    width: 100vw;
     text-align: center;
     margin: auto;
 }
@@ -73,12 +77,18 @@ body {
     margin: 0 10px;
 }
 
+.card-container {
+    width: 100vw;
+    margin: 20px auto 20px auto;
+}
+
 .cards {
-    width: 940px;
+    max-width: 920px;
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
     gap: 10px;
-    margin: auto;
+    justify-items: center;
+    margin: 0 auto;
 }
 
 .card {
@@ -183,4 +193,10 @@ body {
     font-weight: lighter;
     text-align-last: center;
     margin-top: 20px;
+}
+
+@media (max-width: 850px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
