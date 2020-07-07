@@ -60,9 +60,6 @@ label {
     outline: none;
 }
 
-.navigation button:active {
-}
-
 #nav-buy {
     font-weight: bold;
     color: white;
