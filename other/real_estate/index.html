@@ -11,12 +11,13 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./footer.css" />
     </head>
     <body>
         <div class="container">
             <div class="container-header">
                 <div class="navigation">
-                    <button>Buy</button>
+                    <button id="nav-buy">Buy</button>
                     <button>Sell</button>
                     <button>Rent</button>
                     <button>Mortgage</button>
@@ -25,17 +26,18 @@
                     <button>News</button>
                     <div class="login">
                         <button>Log In</button>
-                        <button class="signup">Sign Up</button>
+                        <button id="signup">Sign Up</button>
                     </div>
                 </div>
                 <div class="search-container">
                     <form>
-                        <div class="form-radio">
+                        <div class="search-header">
                             <input
                                 type="radio"
                                 id="buy"
                                 name="search-options"
                                 value="buy"
+                                checked
                             />
                             <label for="buy">buy</label>
 
@@ -65,14 +67,14 @@
                             <label for="home-estimate">home estimate</label>
                         </div>
                         <div class="search-body">
-                            <div class="form-control">
+                            <label for="search">
                                 <input
-                                    type="text"
+                                    type="search"
                                     id="location"
                                     placeholder="Enter an address, City, ZIP, Neighborhood"
                                 />
                                 <button>Search</button>
-                            </div>
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -81,14 +83,23 @@
                         <h1>1,682</h1>
                         <h4>Homes for Sale</h4>
                     </div>
+
+                    <div class="stat-divider"></div>
+
                     <div class="stat-element">
                         <h1>178</h1>
                         <h4>Open Houses</h4>
                     </div>
+
+                    <div class="stat-divider"></div>
+
                     <div class="stat-element">
                         <h1>2,786</h1>
                         <h4>Recently Sold</h4>
                     </div>
+
+                    <div class="stat-divider"></div>
+
                     <div class="stat-element">
                         <h1>475</h1>
                         <h4>Price Reduced</h4>
@@ -112,7 +123,10 @@
                                 </p>
                             </div>
                             <div class="card-body-save">
-                                <i class="fa fa-heart-empty"></i>
+                                <input type="checkbox" id="home1-heart" />
+                                <label for="home1-heart"
+                                    ><i class="fa fa-heart"></i
+                                ></label>
                             </div>
                         </div>
                     </div>
@@ -129,7 +143,10 @@
                                 </p>
                             </div>
                             <div class="card-body-save">
-                                <i class="fa fa-heart-empty"></i>
+                                <input type="checkbox" id="home2-heart" />
+                                <label for="home2-heart"
+                                    ><i class="fa fa-heart"></i
+                                ></label>
                             </div>
                         </div>
                     </div>
@@ -146,12 +163,29 @@
                                 </p>
                             </div>
                             <div class="card-body-save">
-                                <i class="fa fa-heart-empty"></i>
+                                <input type="checkbox" id="home3-heart" />
+                                <label for="home3-heart"
+                                    ><i class="fa fa-heart"></i
+                                ></label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <footer>
+                <hr />
+                <div class="footer-body">
+                    <h5>Randy Van</h5>
+                    <a href="#"></a>
+                    <div class="footer-source">
+                        <small>Design: </small>
+                        <a
+                            href="https://uidesigndaily.com/posts/photoshop-real-estate-landing-page-day-159"
+                            >UI Daily Design</a
+                        >
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
